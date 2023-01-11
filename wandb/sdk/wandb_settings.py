@@ -540,7 +540,7 @@ class Settings:
             _sync={"value": False},
             _platform={"value": util.get_platform_name()},
             _save_requirements={"value": True, "preprocessor": _str_as_bool},
-            _service_wait={"value": 30, "preprocessor": int},
+            _service_wait={"value": 300, "preprocessor": int},
             _stats_sample_rate_seconds={"value": 2.0, "preprocessor": float},
             _stats_samples_to_average={"value": 15},
             _stats_join_assets={"value": True, "preprocessor": _str_as_bool},
