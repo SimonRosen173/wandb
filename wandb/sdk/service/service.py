@@ -59,7 +59,7 @@ class _Service:
     def _wait_for_ports(
         self, fname: str, proc: Optional[subprocess.Popen] = None
     ) -> bool:
-        time_max = time.monotonic() + self._settings._service_wait
+        time_max = time.monotonic() + 3000  #self._settings._service_wait
         while time.monotonic() < time_max:
             if proc and proc.poll():
                 # process finished
