@@ -767,7 +767,7 @@ class _WandbInit:
 
         run_start_handle = backend.interface.deliver_run_start(run_obj)
         # TODO: add progress to let user know we are doing something
-        run_start_result = run_start_handle.wait(timeout=30)
+        run_start_result = run_start_handle.wait(timeout=600)
         if run_start_result is None:
             run_start_handle.release()
 
